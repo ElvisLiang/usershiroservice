@@ -16,7 +16,7 @@
     where id = #{id,jdbcType=INTEGER}
   </select>
 
-  <select id="selectAuthorityByUserId" resultMap="BseResultMap" parameterType="java.lang.Integer">
+  <select id="selectAuthorityByUserId" resultMap="BaseResultMap" parameterType="java.lang.Integer">
      select
       authority.id, authority.authorityname, authority.url
     from authority
